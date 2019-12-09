@@ -15,4 +15,17 @@ Demo of a phpstorm project integrated with a Okteto-based development environmen
 
         okteto exec -- composer install
         
-1. Open PHPStorm, load the project, and run your tests by right-clicking on `phpunit.xml` and select the `run phpunit.xml` option. 
+1. Open PHPStorm
+1.Configure a remote SSH interpreter with the following configurations:
+ 
+     | Setting | Value |
+     | ------: | :----------- |
+     | Host    | localhost |
+     | User    | root |
+     | Port    | 22000 |
+     | Interpreter| /usr/local/bin/php |
+     | Path mappings| $ProjectRoot -> /okteto |
+ 
+1. Add a test framework, pick the remote interpreter you created in the previous step, and set the composer autoloader's path to `/okteto/vendor/autoload.php`
+ 
+1. Run your tests by right-clicking on `phpunit.xml` and select the `run phpunit.xml` option. 
