@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="php@bf22d6b2-4c7d-4ae3-a81b-91bc682cda65">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/okteto" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+name: hello
+image: ramiro/php
+command:
+- bash
+forward:
+  - 22000:22100
+  - 9000:9000
+environment:
+  - OKTETO_REMOTE_PORT=22100
